@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trigo Master Solver</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Trigo Master Solver</h1>
+    <p>High-precision trigonometry calculator with exact + decimal results.</p>
+  </header>
+
+  <section class="card">
+    <h2>Natural Language Quick Solver</h2>
+    <p class="hint">Try: <code>Convert -955° to radians and find coterminal angle</code> or <code>Find tan(5pi/4)</code></p>
+    <div class="row">
+      <input id="nl-input" type="text" placeholder="Describe the trig problem..." />
+      <button id="nl-solve">Solve</button>
+    </div>
+    <pre id="nl-output" class="output"></pre>
+  </section>
+
+  <nav class="tabs" id="tabs"></nav>
+  <main id="modules"></main>
+
+  <footer>
+    <small>Exact forms are shown when recognized as special angles or symbolic ratios. Decimals use configurable precision.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
